@@ -26,14 +26,22 @@ const Likes = () => {
         fontSize: 19,
     }
 
-
-
-
-    return <Button onClick={() => setLikes(likes + 1)} style={borderStyle}>{likes} Me gusta</Button>
+    return(
+        <div>
+            <Button onClick={() => setLikes(likes + 1)} style={borderStyle}>{likes} Me gusta</Button>
+            <Reset onClick={() => setLikes(0)}>Reset</Reset>
+        </div>
+    )
 }
 
-const Button = ({onClick, children, style}) => {
+
+const Button = ({onClick, style, children}) => {
     return <button onClick={onClick} style={style}>{children}</button>
+}
+
+const Reset = ({onClick, children}) => {
+    console.log("re render")
+    return <button onClick={onClick}>{children}</button>
 }
 
 const RenderLikes = () => {

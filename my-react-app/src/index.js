@@ -20,6 +20,7 @@ import CheckAge3 from './components/CheckAge3';
 import GateKeeper from './components/GateKeeper';
 import ToDoList from './components/ToDoList';
 import RenderLikes from './components/RenderLikes';
+import Counters from './components/Counters';
 
 import ChangeState from './components/ChangeState';
 import reportWebVitals from './reportWebVitals';
@@ -83,6 +84,9 @@ root.render(
         <LineSeparation />
 
         <RenderLikes />
+        <LineSeparation />
+
+        <Counters />
         <LineSeparation />
 
     </React.StrictMode>
